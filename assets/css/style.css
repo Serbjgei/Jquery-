@@ -149,23 +149,16 @@
   width: 250px;
   background: rgba(122, 83, 195, 0.1607843137);
 }
-
-.select.is-active .select__body {
-  display: block;
-}
-
 .select__header {
   border: 1px solid #ccc;
   cursor: pointer;
   display: flex;
 }
-
 .select__current {
   font-size: 18px;
   line-height: 24px;
   padding: 8px;
 }
-
 .select__icon {
   align-items: center;
   display: flex;
@@ -176,13 +169,9 @@
   text-align: center;
   width: 40px;
 }
-
-.roto {
-  transform: rotate(180deg);
-}
-
 .select__body {
   border: 1px solid #cccccc;
+  z-index: 100;
   border-top: 0;
   background: rgba(122, 83, 195, 0.1607843137);
   display: none;
@@ -191,7 +180,6 @@
   right: 0;
   top: 100%;
 }
-
 .select__item {
   cursor: pointer;
   font-size: 16px;
@@ -200,6 +188,14 @@
 }
 .select__item:hover {
   background-color: #f2f2f2;
+}
+
+.select.is-active .select__body {
+  display: block;
+}
+
+.roto {
+  transform: rotate(180deg);
 }
 
 .block {
